@@ -1,0 +1,57 @@
+.example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+  }
+  
+  .sidenav {
+    /* display: flex; */
+    
+    width: 350px;
+    background: rgba(82, 80, 80, 0.5);
+  }
+  .picture-element {
+    /* position: relative; */
+    margin: 50px auto;
+    width: 100px;
+  }
+  .picture {
+      /* position: absolute; */
+      /* top: 75px;
+      left: 125px; */
+      
+      border-radius: 50%;
+      border: 2px solid black;
+      width: 100px;
+  }
+  h4{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* top: 150px; */
+  }
+  hr {
+      margin: auto;
+      width: 50%;
+  }
+
+  a {
+      text-decoration: none;
+  }
+  li {
+      list-style-type: none;
+  }
+  .routedcompo{ 
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 100px auto;
+  }
+  .btmborder {
+      padding: 5px;
+      margin: 5px;
+      /* border-bottom: 1px solid white; */
+  }
