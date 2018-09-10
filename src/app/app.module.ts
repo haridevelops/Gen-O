@@ -13,12 +13,21 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router/src/config';
 import { HomeComponent } from './home/home.component';
+import { WellnessComponent } from './wellness/wellness.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'wellness',
+    component: WellnessComponent
   }
 ];
 
@@ -26,7 +35,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    WellnessComponent
   ],
   imports: [
     BrowserModule,
