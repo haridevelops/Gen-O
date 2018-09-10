@@ -2,3 +2,30 @@
     border-radius: 10px;
     
 }
+
+.example-small-box, .example-large-box {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-small-box {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .example-large-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  ul li {
+    list-style-type: none
+  }
+  a {
+    text-decoration: none;
+  }
+  li a:active {
+    background-color: green;
+    font-size: 25px;
+  }

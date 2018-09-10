@@ -1,24 +1,44 @@
 <ng-container>
   <mat-sidenav-container class="example-container">
-    <mat-sidenav 
-      #sidenav 
-      mode="side" 
-      opened 
-      class="sidenav"
-      fixedInViewport="true" 
-      fixedTopGap="0"
-      fixedBottomGap="0">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav" fixedInViewport="true" fixedTopGap="0" fixedBottomGap="0">
       <div class="picture-element">
-        <a href="#"><img class="picture" src="https://bit.ly/fcc-relaxing-cat" alt="user-image"></a>
+        <a href="#">
+          <img class="picture" src="https://bit.ly/fcc-relaxing-cat" alt="user-image">
+        </a>
       </div>
-      <h4><strong>Josh Stevenson</strong></h4>
+      <h4>
+        <strong>Josh Stevenson</strong>
+      </h4>
       <div class="routedcompo">
-        <div class="btmborder"><a [routerLink]="['/home']">Digital Health</a></div><hr />
-        <div class="btmborder"><a [routerLink]="['/wellness']">Wellness Advisory</a></div><hr />
-        <div class="btmborder"><a [routerLink]="['/movies/popular']">Track your goals</a></div><hr />
-        <div class="btmborder"><a [routerLink]="['/movies/popular']">User Settings</a></div><hr />
+        <div class="btmborder">
+          <a [routerLink]="['/home']">Digital Health</a>
+        </div>
+        <hr />
+        <div class="btmborder">
+          <a [routerLink]="['/wellness']">Wellness Advisory</a>
+        </div>
+        <hr />
+        <div class="btmborder">
+          <a [routerLink]="['/movies/popular']">Track your goals</a>
+        </div>
+        <hr />
+        <div class="btmborder">
+          <a [routerLink]="['/movies/popular']">User Settings</a>
+        </div>
+        <hr />
       </div>
     </mat-sidenav>
-    <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+    <mat-sidenav-content class="content container-fluid">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
   </mat-sidenav-container>
 </ng-container>
+
+<!-- 
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div> -->
