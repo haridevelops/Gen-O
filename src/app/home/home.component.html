@@ -1,15 +1,15 @@
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top:25px;">
   <div class="row">
     <div class="col-xs-12">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs" style="width:35%;">
         <li role="presentation">
-          <a [routerLink]="['/home/health-vitals']">Health Vitals</a>
+          <a [routerLink]="['/home/health-vitals']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Health Vitals</a>
         </li>
         <li role="presentation">
-          <a [routerLink]="['/home/lifestyle']">LifeStyle</a>
+          <a [routerLink]="['/home/lifestyle']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">LifeStyle</a>
         </li>
         <li role="presentation">
-          <a [routerLink]="['/home/genomics']">Genomics</a>
+          <a [routerLink]="['/home/genomics']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Genomics</a>
         </li>
       </ul>
     </div>

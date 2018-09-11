@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenomicsComponent implements OnInit {
 
+  enableLinkMyReport: boolean;
+  showRiskReport: boolean;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  public chk_LinkMyreport(val: boolean) {
+    this.enableLinkMyReport = val;
   }
 
+  public linkReport() {
+    this.showRiskReport = true;
+  }
 }

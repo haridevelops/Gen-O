@@ -4,7 +4,7 @@
 }
 
 .example-small-box, .example-large-box {
-    margin: 16px;
+    /*margin: 16px;*/
     padding: 16px;
     border-radius: 8px;
   }
@@ -15,17 +15,25 @@
   }
   
   .example-large-box {
-    height: 300px;
-    width: 300px;
+    /*height: 300px;
+    width: 300px;*/
   }
 
-  ul li {
-    list-style-type: none
-  }
-  a {
-    text-decoration: none;
-  }
-  li a:active {
-    background-color: green;
+ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  background-color: #cfcdcd;
+  color:black;
+  font-weight:bold;
+}
+  /* li a:active {
+    background-color: #3bbd4c;
+    font-size: 25px;
+  } */
+  .active {
+    background-color: #3bbd4c !important;
     font-size: 25px;
   }

@@ -1,0 +1,57 @@
+.lifestyle {
+  margin-top: 50px;
+}
+
+#tableheading {
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+
+.tableheader {
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+
+.table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+table {
+  border-bottom: 2px solid lightblue;
+  border-top: 2px solid lightblue;
+}
+
+thead th {
+  border-bottom: 2px solid lightblue;
+}
+
+tr {
+  color: blue;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d2f1f5;
+}
+
+#inference {
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 50px 0px 50px 0px;
+}
+
+.inference-text {
+  margin: 50px 0px 50px 0px;
+}
+
+.jumbo {
+  border: 0px solid black;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#disclaimer {
+  margin: 70px 0px 0px 0px;
+}
