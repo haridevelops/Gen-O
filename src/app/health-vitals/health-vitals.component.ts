@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HealthVitalsComponent implements OnInit {
 
+  enableLinkMyReport: boolean
   constructor() { }
 
   ngOnInit() {
   }
-
+  public chk_LinkMyreport(val: boolean) {
+    this.enableLinkMyReport = val;
+  }
 }

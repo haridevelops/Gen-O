@@ -24,7 +24,7 @@ import { DigitalHealthComponent } from './digital-health/digital-health.componen
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'digital',
     pathMatch: 'full'
   },
   {
@@ -33,7 +33,8 @@ const appRoutes: Routes = [
     children: [
       {
         path: '',
-        component: DigitalHealthComponent
+        redirectTo: 'genomics',
+        pathMatch: 'full'
       },
       {
         path: 'health-vitals',
@@ -52,6 +53,10 @@ const appRoutes: Routes = [
   {
     path: 'wellness',
     component: WellnessComponent
+  },
+  {
+    path: 'digital',
+    component: DigitalHealthComponent
   }
 ];
 

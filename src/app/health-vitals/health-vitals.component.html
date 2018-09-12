@@ -1,3 +1,140 @@
-<p>
-  health-vitals works!
-</p>
+<div style="margin-bottom:10px;">
+  <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;">
+    <h3>
+      <strong>Health Vitals</strong>
+    </h3>
+    <div class="col-sm-6">
+      <div class="row" style="margin:10px;">
+        <div class="col-sm-4">
+          Selected EHR platform
+        </div>
+        <div class="col-sm-8">
+          <select class="form-control" id="sel1">
+            <option>Select</option>
+            <option>MapMyGennie.com</option>
+            <option>23andMe</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row" style="margin:10px;">
+        <div class="col-sm-4">
+          Customer ID
+        </div>
+        <div class="col-sm-4">
+          <input type="text">
+        </div>
+        <div class="col-sm-4">
+          <button [disabled]="!enableLinkMyReport" class="btn btn-primary btn-sm">Link my Data</button>
+        </div>
+      </div>
+      <div class="row" style="margin:10px;">
+        <label class="checkbox-inline">
+          <input #linkReportCheckBox type="checkbox" (change)="chk_LinkMyreport(linkReportCheckBox.checked);"> Here by I authorize to redirect to Providers website for authorizations.
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom:10px;">
+  <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;">
+    <div class="col-sm-6">
+      <div class="row" style="margin:10px;">
+        <div class="col-sm-4">
+          <strong>Record Date</strong>
+        </div>
+        <div class="col-sm-8">
+          <input type="date" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <div class="row" style="margin:10px;">
+          <div class="col-sm-4">
+            Blood Pressure
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" id="sel1">
+              <option>Elevated: 120-129</option>
+              <option>
+                <80</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row" style="margin:10px;">
+          <div class="col-sm-4">
+            Body Mass Index
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" id="sel1">
+              <option></option>
+              <option>Obese: >30</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <div class="col-sm-6">
+        <div class="row" style="margin:10px;">
+          <div class="col-sm-4">
+            HDL Cholesterol
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" id="sel1">
+              <option></option>
+              <option>Normal
+                <40-59 mg/dl</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row" style="margin:10px;">
+          <div class="col-sm-4">
+            Blood Glucose
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" id="sel1">
+              <option></option>
+              <option>Normal
+                <100 mg/dl</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row" style="margin:10px;">
+        <div class="col-sm-4">
+          Triglyceride
+        </div>
+        <div class="col-sm-8">
+          <select class="form-control" id="sel1">
+            <option></option>
+            <option>Borderline: 150-199 mg/dl</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom:10px;">
+  <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;">
+    <div class="row" style="margin:10px;">
+      <div class="col-sm-8">
+        Thanks for updating your Health Vitals, this enables to keep track of your health changesover period of time.
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary btn-lg">Track my Progress</button>
+      </div>
+    </div>
+  </div>

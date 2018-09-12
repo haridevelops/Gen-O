@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-genomics',
@@ -11,7 +12,7 @@ export class GenomicsComponent implements OnInit {
   showRiskReport: boolean;
   showDetailReport: boolean;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() { }
 
@@ -26,5 +27,9 @@ export class GenomicsComponent implements OnInit {
 
   public linkDetails() {
     this.showDetailReport = true;
+  }
+
+  public takeMeToLifeStyle() {
+    this.router.navigate(['/home','health-vitals']);
   }
 }
