@@ -16,17 +16,17 @@
     <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;">
       <h1 style="text-align: center;">Build Your Profile</h1>
       <div class="flexing">
-        <div class="col-sm-3">
+        <div class="col-sm-3" (click)="navigateTo('health-vitals')">
           <h2 style="text-align: center;">Health vitals</h2>
           <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'"
             [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300"></circle-progress>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" (click)="navigateTo('lifestyle')">
           <h2 style="text-align: center;">Lifestyle</h2>
           <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'"
             [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300"></circle-progress>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" (click)="navigateTo('genomics')">
           <h2 style="text-align: center;">Genomics</h2>
           <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'"
             [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300"></circle-progress>
@@ -34,5 +34,4 @@
       </div>
     </div>
   </div>
-
 </div>

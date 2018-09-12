@@ -9,6 +9,7 @@ export class GenomicsComponent implements OnInit {
 
   enableLinkMyReport: boolean;
   showRiskReport: boolean;
+  showDetailReport: boolean;
 
   constructor() { }
 
@@ -16,9 +17,14 @@ export class GenomicsComponent implements OnInit {
 
   public chk_LinkMyreport(val: boolean) {
     this.enableLinkMyReport = val;
+    this.showDetailReport = false;
   }
 
   public linkReport() {
     this.showRiskReport = true;
+  }
+
+  public linkDetails() {
+    this.showDetailReport = true;
   }
 }

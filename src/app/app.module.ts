@@ -24,13 +24,17 @@ import { DigitalHealthComponent } from './digital-health/digital-health.componen
 const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
     path: 'home',
     component: HomeComponent,
     children: [
+      {
+        path: '',
+        component: DigitalHealthComponent
+      },
       {
         path: 'health-vitals',
         component: HealthVitalsComponent
