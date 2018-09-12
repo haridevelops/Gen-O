@@ -1,0 +1,56 @@
+.wellness_page {
+    width: 100%;
+    background: lightgray;
+    height: 100vh;
+}
+
+.wellness_page h2 { color: darkblue; padding: 20px 10px 0px; }
+.wellness_page div {
+    display: inline-block;
+    width: 27%;
+    padding: 20px;
+    margin: 15px;
+    vertical-align: top;
+    background: #fff;
+    min-height: 85vh;
+}
+.wellness_page div.left_pane { margin-left: 30px; }
+
+.wellness_page div > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wellness_page div title {
+  display: block;
+  text-decoration: underline;
+  color: darkblue;
+  padding-bottom: 10px;
+}
+
+.wellness_page div ul li p { display: inline; }
+.wellness_page div ul {
+    margin-bottom: 20px;
+}
+
+.right_pane i {
+    padding: 10px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.right_pane i.w_g1 {
+    background: url("/assets/images/wellness_g1.png");
+    width: 345px;
+    height: 115px;
+}
+.right_pane i.w_g2 {
+    background: url("/assets/images/wellness_g2.png");
+    width: 385px;
+    height: 135px;
+}
+.right_pane i.w_g3 {
+    background: url("/assets/images/wellness_g3.png");
+    width: 385px;
+    height: 135px;
+}
