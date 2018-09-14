@@ -32,6 +32,9 @@
 .wellness_page div ul {
     margin-bottom: 20px;
 }
+.right_pane {
+    width: 500px;
+}
 
 .right_pane i {
     padding: 10px;
@@ -53,4 +56,8 @@
     background: url("/assets/images/wellness_g3.png");
     width: 385px;
     height: 135px;
+}
+
+img {
+    margin-left: 100px;
 }
