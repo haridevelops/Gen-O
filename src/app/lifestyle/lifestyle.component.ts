@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lifestyle',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LifestyleComponent implements OnInit {
 
   enableLinkMyReport: boolean
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
@@ -16,5 +17,9 @@ export class LifestyleComponent implements OnInit {
   public chk_LinkMyreport(val: boolean) {
     this.enableLinkMyReport = val;
 
+  }
+
+  public trackProgress() {
+    this.router.navigate(['/wellness'], { queryParams: { component: 'lifestyle'} });
   }
 }

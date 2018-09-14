@@ -1,38 +1,44 @@
-<div>
+<div style="margin-bottom:10px;">
   <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;margin-bottom:25px;">
     <h3>
       <strong>Lifestyle data from wellness platform</strong>
     </h3>
-    <div class="col-sm-6">
-      <div class="row" style="margin:10px;">
-        <div class="col-sm-4">
-          Selected wellness platform
+    <div class="col-sm-12" style="margin-bottom:15px;">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-4">
+            Selected wellness platform
+          </div>
+          <div class="col-sm-8">
+            <select class="form-control" id="sel1">
+              <option>Select</option>
+              <option>BlueButton</option>
+            </select>
+          </div>
         </div>
-        <div class="col-sm-8">
-          <select class="form-control" id="sel1">
-            <option>Select</option>
-            <option>Google Fit</option>
-            <option>Fitbit</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="row" style="margin:10px;">
-        <div class="col-sm-4">
-          Google Username
-        </div>
-        <div class="col-sm-4">
-          <input class="form-control" type="text">
-        </div>
-        <div class="col-sm-4">
-          <button [disabled]="!enableLinkMyReport" class="btn btn-primary btn-sm">Link my data</button>
+        <div class="col-sm-6">
+          <div class="row" style="margin:10px;">
+            <div class="col-sm-4">
+              Google Username
+            </div>
+            <div class="col-sm-8">
+              <input class="form-control" type="text">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row" style="margin:10px;">
-        <label class="checkbox-inline">
-          <input #linkReportCheckBox type="checkbox" (change)="chk_LinkMyreport(linkReportCheckBox.checked);"> Here by I authorize to redirect to Providers website for authorizations.
-        </label>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-4">&nbsp;</div>
+          <div class="col-sm-8">
+            <label class="checkbox-inline">
+              <input #linkReportCheckBox type="checkbox" (change)="chk_LinkMyreport(linkReportCheckBox.checked);"> Here by I authorize to redirect to Providers website for authorizations.
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-4"><button [disabled]="!enableLinkMyReport" class="btn btn-primary btn-sm">Link my data</button></div>
+        </div>
       </div>
     </div>
   </div>
@@ -40,61 +46,63 @@
 
 <div style="margin-bottom:10px;">
   <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;margin-bottom:25px;">
-    <div class="col-sm-6">
-      <div class="row" style="margin:10px;">
-        <div class="col-sm-4">
-          <strong>Record Activity for the day</strong>
-        </div>
-        <div class="col-sm-8">
-          <input type="date" class="form-control" />
+    <div class="col-sm-12" style="margin-bottom:15px;margin-top:15px;">
+      <div class="row" style="margin-bottom:15px;">
+        <div class="col-sm-6">
+          <div class="col-sm-4">
+            <strong>Record Activity for the day</strong>
+          </div>
+          <div class="col-sm-8">
+            <input type="date" class="form-control" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-12">
-      <div class="col-sm-6">
-        <div class="row" style="margin:10px;">
+      <div class="row" style="margin-bottom:15px;">
+        <div class="col-sm-6">
           <div class="col-sm-4">
-            Step Count
+            Step Count <br /><i>(steps/day)</i>
           </div>
           <div class="col-sm-8">
             <select class="form-control" id="sel1">
               <option>Select</option>
-              <option><5000 steps/day</option>
+              <option><5000</option>
+              <option>5000-7499</option>
+              <option>7500-9999</option>
+              <option>>10000</option>
             </select>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="row" style="margin:10px;">
+        <div class="col-sm-6">
           <div class="col-sm-4">
             Smoking Status
           </div>
           <div class="col-sm-8">
             <select class="form-control" id="sel1">
               <option>Select</option>
-              <option>Non smoking : 0 cigarette</option>
+              <option>Non Smoker : 0 cigarette</option>
+              <option>Medium : 0-5 cigarettes</option>
+              <option>High : 6-10 cigarettes</option>
+              <option>Very High : >10 cigarettes</option>
             </select>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-sm-12">
-      <div class="col-sm-6">
-        <div class="row" style="margin:10px;">
+      <div class="row" style="margin-bottom:15px;">
+        <div class="col-sm-6">
           <div class="col-sm-4">
-            Exercise engagement time
+            Exercise engagement time <i>(mins/day)</i>
           </div>
           <div class="col-sm-8">
             <select class="form-control" id="sel1">
               <option>Select</option>
-              <option>Low <15 mins/day</option>
+              <option><15</option>
+              <option>15-30</option>
+              <option>31-45</option>
+              <option>>45</option>
             </select>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="row" style="margin:10px;">
+        <div class="col-sm-6">
           <div class="col-sm-4">
             Water Intake
           </div>
@@ -106,18 +114,17 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-sm-6">
-      &nbsp;
-    </div>
-    <div class="col-sm-6">
-      <div class="row" style="margin:10px;">
-        <div class="col-sm-4">
+      <div class="row" style="margin-bottom:15px;">
+        <div class="col-sm-6">
           &nbsp;
         </div>
-        <div class="col-sm-8" style="text-align:right;">
-          <button class="btn btn-primary btn-sm">Save my data</button>
+        <div class="col-sm-6">
+          <div class="col-sm-4">
+            &nbsp;
+          </div>
+          <div class="col-sm-8" style="text-align:right;">
+            <button type="button" class="btn btn-primary btn-sm">Save my data</button>
+          </div>
         </div>
       </div>
     </div>
@@ -157,25 +164,27 @@
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Honey
+            Honey <i>(ml)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="250" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>100ml</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Fruits (Apple/Banana)
+            Fruits <br /><i>(Apple/Banana)</i>
           </div>
           <div class="col-sm-8">
             <select class="form-control" id="sel1">
               <option>Select</option>
-              <option>2 piece</option>
+              <option>Yes</option>
+              <option>No</option>
             </select>
           </div>
         </div>
@@ -183,13 +192,14 @@
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Pork
+            Pork <br /><i>(gm)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="75" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>80gms</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
@@ -198,25 +208,27 @@
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Candy,toffee
+            Candy, Toffee <br /><i>(piece)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="1" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>1 piece</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Vegetables (Beans,Spinach, Sprouts)
+            Vegetables <i>(Beans,Spinach, Sprouts)</i>
           </div>
           <div class="col-sm-8">
             <select class="form-control" id="sel1">
               <option>Select</option>
-              <option>300gms</option>
+              <option>Yes</option>
+              <option>No</option>
             </select>
           </div>
         </div>
@@ -224,13 +236,14 @@
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Beef
+            Beef <br /><i>(gm)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="75" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>0 gms</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
@@ -239,39 +252,42 @@
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Cream cake, pastries
+            Cream cake, pastries <br /><i>(piece)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="1" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>1 piece</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Canned meat
+            Canned meat <br /><i>(gm)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="75" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>20 gms</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="row" style="margin:10px;">
           <div class="col-sm-4">
-            Soft drinks
+            Soft drinks <br /><i>(ml)</i>
           </div>
           <div class="col-sm-8">
-            <select class="form-control" id="sel1">
+            <input type="number" class="form-control" value="0" min="0" step="250" />
+            <!--<select class="form-control" id="sel1">
               <option>Select</option>
               <option>250 ml</option>
-            </select>
+            </select>-->
           </div>
         </div>
       </div>
@@ -285,6 +301,6 @@
 </div>
 <div>
   <div class="col-sm-10 col-md-10 col-lg-10" style="background-color:white;border:1px solid #f1f1f1;border-radius:10px;margin-bottom:25px;text-align:right;margin-right:25px;">
-    <button type="button" routerLink="/wellness" class="btn btn-primary btn-lg">Track my Progress</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="trackProgress()">Track my Progress</button>
   </div>
 </div>

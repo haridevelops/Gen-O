@@ -3,13 +3,13 @@
     <div class="col-xs-12">
       <ul class="nav nav-tabs" style="width:35%;">
         <li role="presentation">
+          <a [routerLink]="['/home/genomics']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Genomics</a>
+        </li>
+        <li role="presentation">
           <a [routerLink]="['/home/health-vitals']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Health Vitals</a>
         </li>
         <li role="presentation">
           <a [routerLink]="['/home/lifestyle']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">LifeStyle</a>
-        </li>
-        <li role="presentation">
-          <a [routerLink]="['/home/genomics']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Genomics</a>
         </li>
       </ul>
     </div>
